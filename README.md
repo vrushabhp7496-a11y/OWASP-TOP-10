@@ -113,6 +113,52 @@
 ---
 
 
+### 3. A07 Authentication Failures : 
+- This vulnerability happens when application fails to trust that user is legitmate or valid user.
+- This happens because of the following reasons
+   1. Weak and guessable passwords.
+   2. Lack OF Multifactor authentication
+   3. Session fixation
+
+---
+
+### How attacker exploit it 
+1. Brute force attack : Automating login request by using wordlist to guess the right password
+2. Credential stuffing : Assume you loging some website and set some password but that website itself got hacked then attacker can use your password on another site,or can use it on your      own account
+3. Session hijacking : Stealing a valid session cookie (usually via XSS or MITM) and using it to impersonate the user without needing the password.
+
+---
+- To overcome this following standards must be follwed.
+  1. Use strong password policy
+  2. use MFA
+  3. Rate limiting to avoid brute force.
+  4. Sessions regeneration.
+ 
+---
+
+### Lets see tryhackme rooms lab to better understand this vulnerability :
+
+---
+
+<img width="566" height="559" alt="Screenshot 2026-05-04 234211" src="https://github.com/user-attachments/assets/90fd696e-892e-4a12-9171-6ff2df5e49d1" />
+
+Here i created account with name of "aDMIN"
+
+---
+
+<img width="551" height="485" alt="Screenshot 2026-05-04 234226" src="https://github.com/user-attachments/assets/0b14ce76-4189-4648-83ed-5043fa7b92d2" />
+
+Then i tried to login using account name "admin"
+
+---
+
+<img width="818" height="695" alt="Screenshot 2026-05-04 234241" src="https://github.com/user-attachments/assets/3e9d3c10-139c-459c-a7f5-fb32cf8f2e62" />
+
+And i succed to get in that account beacsue server failed to authenticate the legitmate user between "aDMIN" and  "admin".
+
+
+
+
 
 
       
