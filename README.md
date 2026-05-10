@@ -257,7 +257,7 @@ And i succed to get in that account beacsue server failed to authenticate the le
 ---
 
 
-### A06 Vulnerable and outdated componants :
+### 7. A06 Vulnerable and outdated componants :
 - This happens when application depend on componant which is compromised,improperly configured,outdated.
 - This is not source code vulnerability but this may can weaakness where vendor is itself compromised to any one of weakness listed above.
 - Attacker exploit this to inject malicious code bypass security or steal sensitive data.
@@ -277,7 +277,40 @@ And i succed to get in that account beacsue server failed to authenticate the le
 - Alwys prefer trusted and verified componants and libreries.
 - Always configure and check software upadte for bugs.
 - Always do auditing of third party vendors and componants before taking service.
-- Regular vulnerability checking.7
+- Regular vulnerability checking.
+
+---
+
+### 8. Injection : 
+- This is the vilnerability where hacker put command in input area of the webapplication or website and application runs it without proper validation.
+- Hacker injects malicious code,command or query to gain unautorised aceess.
+- The website run this code assuming that it is legitmate input.
+- Hacker can gain access to another user account or he can gain access where comman user is not allowed to visit.
+
+
+---
+
+### Common types :
+- SQL injection
+- LDAP
+- Command injection
+- XSS Cross site scripting
+
+---
+
+### Preventions : 
+- Do not trust user side input
+- Always sanitise user input
+- Parameterised queries
+- Escaping special characters
+- Configure database for least privilage.
+- Web application firewall to block known patterns.
+
+---
+
+
+
+ 
 
 
 
