@@ -208,10 +208,85 @@ And i succed to get in that account beacsue server failed to authenticate the le
 - Use encryptions
 - Store password in enviromental variables.
 - Update TLS.
- 
+
+#### Below i have added some screenshots from tryhackmes room : 
+
+
 ---
 
-### 7. 
+<img width="1231" height="652" alt="Screenshot 2026-05-10 172424" src="https://github.com/user-attachments/assets/bd4ab8a7-0cc5-4432-ae66-2bcc3eeecdad" />
+
+
+---
+
+<img width="1193" height="572" alt="Screenshot 2026-05-10 172613" src="https://github.com/user-attachments/assets/bb230957-d215-4015-92c2-027872a157fb" />
+
+
+---
+
+<img width="327" height="78" alt="Screenshot 2026-05-10 172625" src="https://github.com/user-attachments/assets/89435e1c-cb16-42eb-91f3-4af7eec8d3c7" />
+
+---
+
+<img width="1547" height="565" alt="Screenshot 2026-05-10 173104" src="https://github.com/user-attachments/assets/11acdd1f-3c9b-44b9-8f74-293f66c945e3" />
+
+
+---
+
+### 6. A04 Insecure Design :
+- This happen when a flawed logic is built in system,website or application without reviwing it.
+- Some security measures are skipped.
+- With AI design developers relay too much on AI generated code trusting that these are reliable are flawless this measure causing poor architectural pattern.
+
+---
+
+### Some common design flaws are :
+- User ID in URL
+- No rate limiting on OTP.
+- SQL injection at login.
+
+---
+
+### Prevention : 
+- Threat MOdeling ( See where Hacker can attack)
+- User privilage (Only grant needed access)
+- Always keep scure default setting like password policy.
+- Design system assuming breach.
+
+
+---
+
+
+### A06 Vulnerable and outdated componants :
+- This happens when application depend on componant which is compromised,improperly configured,outdated.
+- This is not source code vulnerability but this may can weaakness where vendor is itself compromised to any one of weakness listed above.
+- Attacker exploit this to inject malicious code bypass security or steal sensitive data.
+
+
+---
+
+### Common reasons :
+- Using untrusted componants or libraries.
+- Auto installing software updates without configuring
+- Over relay on third party without auditing it.
+- Lack of modeling for vulnerabilities in dependencies after deployement.
+
+---
+
+### Preventions :
+- Alwys prefer trusted and verified componants and libreries.
+- Always configure and check software upadte for bugs.
+- Always do auditing of third party vendors and componants before taking service.
+- Regular vulnerability checking.7
+
+
+
+  
+   
+
+
+
+
  
 
 
