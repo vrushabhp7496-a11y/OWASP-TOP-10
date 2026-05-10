@@ -156,6 +156,38 @@ Then i tried to login using account name "admin"
 
 And i succed to get in that account beacsue server failed to authenticate the legitmate user between "aDMIN" and  "admin".
 
+---
+
+### A05 Security Misconfiguration : 
+- This happens because when software or website or application is designed with software flaws,exposed services,or weak policies.
+- Thes are not code bugs but these are the misconfiguration enviroment in where software is designed.
+- This is the critical vulnerability as it can lead to massive data breach,complete system exposure,attacker can  get privilage.
+
+
+---
+
+### Common reasons are : 
+- Weak credentials or passwords
+- Outdated softwares.
+- Design with known vulnerabilities.
+- Misconfigured configrations.
+- Verbose error messaages exploiting system informations.
+
+
+---
+
+### Preventions :
+- Apply strong password policy.
+- Regular software update.
+- Design with proper known vulnerabilitis to avoid them.
+- Proper configuration
+- Error messages kept user friendly.
+
+
+ ---
+
+ 
+
 
 
 
