@@ -158,7 +158,7 @@ And i succed to get in that account beacsue server failed to authenticate the le
 
 ---
 
-### A05 Security Misconfiguration : 
+### 4. A05 Security Misconfiguration : 
 - This happens because when software or website or application is designed with software flaws,exposed services,or weak policies.
 - Thes are not code bugs but these are the misconfiguration enviroment in where software is designed.
 - This is the critical vulnerability as it can lead to massive data breach,complete system exposure,attacker can  get privilage.
@@ -186,6 +186,32 @@ And i succed to get in that account beacsue server failed to authenticate the le
 
  ---
 
+
+### 5. A02 Cryptographic Failures :
+- It means that encryption for data in transit or data in store is weak or falsly configured or totally not well applied.
+- This is very critical vulnerability as it can expose data to attacker or hacker in plain text form.
+- This may can lead in password exposure,data breach or even gaining unauthorised access to system by using password exposed.
+
+
+  ---
+
+  ### Common reasons :
+- Using old hashing like MD% and SHA 1
+- No encryption.
+- Weak SSL TLS Certificate or self signed certificates.
+- Hardcoded credentials. ( Writing password in Source code which are easily visible)
+
+---
+
+### Preventions : 
+- Use strong algorithms
+- Use encryptions
+- Store password in enviromental variables.
+- Update TLS.
+ 
+---
+
+### 7. 
  
 
 
