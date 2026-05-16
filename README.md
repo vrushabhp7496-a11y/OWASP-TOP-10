@@ -281,7 +281,7 @@ And i succed to get in that account beacsue server failed to authenticate the le
 
 ---
 
-### 8. Injection : 
+### 8. A03 Injection : 
 - This is the vilnerability where hacker put command in input area of the webapplication or website and application runs it without proper validation.
 - Hacker injects malicious code,command or query to gain unautorised aceess.
 - The website run this code assuming that it is legitmate input.
@@ -307,6 +307,52 @@ And i succed to get in that account beacsue server failed to authenticate the le
 - Web application firewall to block known patterns.
 
 ---
+
+9. A10 Server Side Request Forgery (SSRF) :
+- SSRF is most critical vulnerability in OWASP top 10 and newely added to list in 2021.
+- This is the vulnerability where attacker force to server to extract infornmation where he is not permitted to visit.Like Internal netwrok and cloude metadata.
+- For exanple i have added some screenshots below for better understanding see that.
+
+ ---
+
+ <img width="482" height="116" alt="Screenshot 2026-05-16 111615" src="https://github.com/user-attachments/assets/a1d36009-6765-4324-b1ce-1bbe59d6d605" />
+
+ -The above URL is for image:but attacker uses same url to fetch the metadata of the server see below 
+
+ ---
+
+ <img width="553" height="126" alt="Screenshot 2026-05-16 111821" src="https://github.com/user-attachments/assets/7403bec0-ef9a-4d45-ac71-b1c7ba7303bb" />
+
+ - The server can access this URL because it is internal URL for server and heaance Attacker gets the internal information of the server.
+
+ ---
+
+ ### Impact of SSRF : 
+ - Cloude metadata theft such as access keys and secreats.
+ - Internal port scanning like he can scan for open ports.
+ - Local file access such as password files usernames.
+ - Internal service exploitation 
+ - Firewall bypass
+
+
+---
+
+### Mitigation :
+- Allow Trusted URL
+- Validate user input
+- Disable unused URL scehmes
+- Network segmentation
+- WAF
+
+----
+
+
+Here in this project i summarized about OWASP top 10
+And what i have learnt fron Tryhackme.
+Lets see my next project about Nmap scanner.
+
+
+
 
 
 
